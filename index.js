@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require("fs");
-const licenceGenerator = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = ["What is your project title?", 
@@ -44,15 +44,15 @@ function init() {
             {
                 type: 'list',
                 message: questions[3],
-                name: 'screenshotNeeded',
+                name: 'screenrecNeeded',
                 choices: ["yes", "no"]
             },
             
             {
                 type: 'input',
                 message: questions[4],
-                name: 'screenshotPath',
-                when: (answers) => answers.screenshotNeeded === "yes"
+                name: 'screenrecPath',
+                when: (answers) => answers.screenrecNeeded === "yes"
             },
             {
                 type: 'input',
@@ -70,7 +70,7 @@ function init() {
         ]
     )
     .then((answers)=>{
-        console.log(answers);
+        generateMarkdown(answers);
     });
 }
 
