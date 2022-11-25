@@ -78,11 +78,9 @@ ${data.instructions}
 ## Usage
   
 ${data.usage}
-### Screen record (pic. 1)
+### Screen record (link)
 ${(data.screenrecNeeded==="yes")?
-`<video width="640" height="480" controls>
-  <source src="https://github.com/kas500/README-generator/blob/main/${data.screenrecName}" type="video/mp4">
-</video>'`:"N/A"}
+`"https://github.com/kas500/README-generator/blob/main/${data.screenrecName}"`:"N/A"}
   
 ## Contributing
 
