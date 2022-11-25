@@ -6,10 +6,10 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input
 const questions = ["What is your project title?",
 "Describe your project:",
-"Provide an instalation instructions:",
+"Provide an installation instructions:",
 "Provide a usage instructions:",
 "Do you want to add a screen record?",
-"Input screen record file path:",
+"Input screen record file name:",
 "Provide a contribution guidelines:",
 "Provide a test instructions:",
 "Provider licence info:",
@@ -61,7 +61,7 @@ function init() {
             {
                 type: 'input',
                 message: questions[5],
-                name: 'screenrecPath',
+                name: 'screenrecName',
                 when: (answers) => answers.screenrecNeeded === "yes"
             },
 
