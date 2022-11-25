@@ -4,17 +4,21 @@ const fs = require("fs");
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-const questions = ["What is your project title?", 
-"Describe your project:", 
-"Provide instructions and examples for use:",
-"Do you want to add screenrec?",
-"Input screenshot path:",
-"Provide credits:",
-"Provider licence info"];
+const questions = ["What is your project title?",
+"Describe your project:",
+"Provide an instalation instructions:",
+"Provide a usage instructions:",
+"Do you want to add a screen record?",
+"Input screen record file path:",
+"Provide a contribution guidelines:",
+"Provide a test instructions:",
+"Provider licence info:",
+"Enter your Github name:",
+"Enter your e-mail:"]; 
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile("README.md", data, (err) =>
+    fs.writeFile(fileName, data, (err) =>
         err ? console.error(err) : console.log('Success!')
     );
 }
@@ -42,35 +46,61 @@ function init() {
             },
 
             {
-                type: 'list',
+                type: 'input',
                 message: questions[3],
+                name: 'usage',
+            },
+
+            {
+                type: 'list',
+                message: questions[4],
                 name: 'screenrecNeeded',
                 choices: ["yes", "no"]
             },
             
             {
                 type: 'input',
-                message: questions[4],
+                message: questions[5],
                 name: 'screenrecPath',
                 when: (answers) => answers.screenrecNeeded === "yes"
             },
+
             {
                 type: 'input',
-                message: questions[5],
-                name: 'credits',
+                message: questions[6],
+                name: 'contribution',
+            },
+
+            {
+                type: 'input',
+                message: questions[7],
+                name: 'tests',
             },
 
             {
                 type: 'list',
-                message: questions[6],
+                message: questions[8],
                 name: 'license',
                 choices: ["The MIT license", "Mozilla Public License 2.0","Apache 2.0 License","Boost Software License 1.0","No license"]
+            },
+
+            {
+                type: 'input',
+                message: questions[9],
+                name: 'githubAccount',
+            },
+
+            {
+                type: 'input',
+                message: questions[10],
+                name: 'email',
             }
 
         ]
     )
     .then((answers)=>{
-        generateMarkdown(answers);
+        let readmeContent = generateMarkdown(answers);
+        writeToFile("README.md",readmeContent);
     });
 }
 
