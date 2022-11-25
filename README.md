@@ -19,18 +19,16 @@ For the application to work correctly, you need to download and install Node.js 
 ## Usage
   
 in order to use the application, you need to open a terminal window and switch to the current directory with the index.js file.  Then run the application by entering the node index.js command.  After that, you need to enter the information requested by the application.
-### Screen record (pic. 1)
-<video width="640" height="480" controls>
-  <source src="https://github.com/kas500/README-generator/blob/main/video.mov" type="video/mp4">
-</video>'
+### Screen record (link)
+"https://github.com/kas500/README-generator/blob/main/video.mov"
   
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
 
 ## Test instructions
 
-Please make sure to update tests as appropriate.in order to test the application, you need to open a terminal window and switch to the current directory with the index.js file.  Then run the application by entering the node index.js command.  After that, you need to enter the information requested by the application.
+in order to test the application, you need to open a terminal window and switch to the current directory with the index.js file.  Then run the application by entering the node index.js command.  After that, you need to enter the information requested by the application.
 
 ## License
 
