@@ -80,7 +80,7 @@ ${data.instructions}
 ${data.usage}
 ### Screen record (link)
 ${(data.screenrecNeeded==="yes")?
-`"https://github.com/kas500/README-generator/blob/main/${data.screenrecName}"`:"N/A"}
+`https://github.com/kas500/README-generator/blob/main/${data.screenrecName}`:"N/A"}
   
 ## Contributing
 
