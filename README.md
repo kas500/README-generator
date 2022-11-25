@@ -1,20 +1,46 @@
-# Homework 9
+# Professional README Generator (Node.js challenge). ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
 ## Description
   
-My description
-  
- ## Usage
-  
-Instructions how to use are here
-### Screen record
-path to record
-  
-## Credits
+Professional README Generator is an application that allows you to create a README file automatically by answering the appropriate questions on the command line.
 
-Anton K
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Test instructions](#test-instructions)
+- [License](#tlicense)
+- [Questions](#questions)
+
+## Installation
+
+For the application to work correctly, you need to download and install Node.js and npm.  Detailed instructions can be found by clicking on the link <https://nodejs.org/en/>.  You also need to install the package (the instruction is available at the link <https://www.npmjs.com/package/inquirer>.
+  
+## Usage
+  
+in order to use the application, you need to open a terminal window and switch to the current directory with the index.js file.  Then run the application by entering the node index.js command.  After that, you need to enter the information requested by the application.
+### Screen record (pic. 1)
+<video width="640" height="480" controls>
+  <source src="video.mov" type="video/mp4">
+</video>'
+  
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+
+## Test instructions
+
+Please make sure to update tests as appropriate.in order to test the application, you need to open a terminal window and switch to the current directory with the index.js file.  Then run the application by entering the node index.js command.  After that, you need to enter the information requested by the application.
 
 ## License
 
-## Apache 2.0 License
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+### The MIT license
+  (https://opensource.org/licenses/MIT)
+
+## Questions
+
+If you have any questions please contact me any time!
+
+My GitHhub: <https://github.com/kas500>
+
+My email: <krasnikovanton84@gmail.com>
