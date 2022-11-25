@@ -80,7 +80,7 @@ ${data.instructions}
 ${data.usage}
 ### Screen record (pic. 1)
 ${(data.screenrecNeeded==="yes")?
-`<video width="320" height="240" controls>
+`<video width="640" height="480" controls>
   <source src="${data.screenrecName}" type="video/mp4">
 </video>'`:"N/A"}
   
