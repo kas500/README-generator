@@ -21,7 +21,7 @@ For the application to work correctly, you need to download and install Node.js 
 in order to use the application, you need to open a terminal window and switch to the current directory with the index.js file.  Then run the application by entering the node index.js command.  After that, you need to enter the information requested by the application.
 ### Screen record (pic. 1)
 <video width="640" height="480" controls>
-  <source src="video.mov" type="video/mp4">
+  <source src="https://github.com/kas500/README-generator/blob/main/video.mov" type="video/mp4">
 </video>'
   
 ## Contributing
